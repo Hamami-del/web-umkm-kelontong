@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Hamami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <i class="fas fa-user-circle profile-icon"></i>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <h1 class="logo">Toko Hamami</h1>
+        </header>
+
+        <main>
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#" id="nav-profile"><i class="fas fa-user"></i> Tentang Penjual</a></li>
+                        <li><a href="#" id="nav-delivery"><i class="fas fa-truck"></i> Delivery</a></li>
+                        <li><a href="#" id="nav-checkout"><i class="fas fa-shopping-cart"></i> Check Out</a></li>
+                        <li><a href="#" id="nav-message"><i class="fas fa-comment-dots"></i> Message</a></li>
+                    </ul>
+                </nav>
+                <div class="address">
+                    <p>KP. Karang Kaletak</p>
+                    <p>RT 09 RW 03</p>
+                </div>
+            </aside>
+
+            <section class="product-grid">
+                <div class="product-card" 
+                     data-name="Chocolate cookies" 
+                     data-price="RP 35 K" 
+                     data-price-numeric="35000" 
+                     data-img="img/chocolate-cookies.jpg">
+                    
+                    <img src="chocolate-cookies.jpg" alt="Chocolate cookies">
+                    <h3>Chocolate cookies</h3>
+                    <p class="price">RP 35 K</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="btn-beli">Beli</button>
+                </div>
+
+                <div class="product-card" 
+                     data-name="Vanilla cookies" 
+                     data-price="RP 45 K" 
+                     data-price-numeric="45000" 
+                     data-img="img/vanilla-cookies.jpg">
+                    
+                    <img src="vanilla-cookies.jpg" alt="Vanilla cookies">
+                    <h3>Vanilla cookies</h3>
+                    <p class="price">RP 45 K</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="btn-beli">Beli</button>
+                </div>
+
+                <div class="product-card" 
+                     data-name="Butter cookies" 
+                     data-price="RP 40 K" 
+                     data-price-numeric="40000" 
+                     data-img="img/butter-cookies.jpg">
+                    
+                    <img src="butter-cookies.jpg" alt="Butter cookies">
+                    <h3>Butter cookies</h3>
+                    <p class="price">RP 40 K</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="btn-beli">Beli</button>
+                </div>
+                
+                </section>
+        </main>
+    </div>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="Detail Produk">
+            <h2 id="modal-name">Nama Produk</h2>
+            <p id="modal-price">Harga</p>
+            <p><strong>Komposisi:</strong></p>
+            <p>Tepung terigu, mentega, gula, telur, dan bahan-bahan berkualitas lainnya.</p>
+            <p><strong>Manfaat:</strong></p>
+            <p>Cocok untuk teman minum teh, suguhan tamu, atau hadiah spesial.</p>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
